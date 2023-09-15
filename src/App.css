@@ -1,0 +1,64 @@
+.container{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.bg{
+  width: 100%;
+  height: 100%;
+}
+
+.blur{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+}
+.iphone{
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  
+}
+.info{
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  z-index: 10;
+  color: rgb(178, 177, 177);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+a{
+  color:rgb(178, 177, 177);
+}
+
+@media (max-width:576px) {
+  .iphone{
+    height: 500px;
+  }
+  .info{
+    top: 20px;
+    left: 20px;
+    
+  }
+}
+@media (min-width:1200px){
+  .iphone{
+    height: 500px;
+    width: 900px;
+    left: calc(50% - 900px/2);
+  }
+  
+}
+@media (min-width:1600px) {
+  .iphone{
+    max-height: 600px;
+    max-width: 1200px;
+    left: calc(50% - 1200px/2);
+  }
+}
