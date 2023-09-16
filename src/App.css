@@ -46,17 +46,7 @@ a{
   color:rgb(178, 177, 177);
 }
 
-@media (max-width:576px) {
-  .iphone{
-    height: 500px;
-  }
-  .info{
-    top: 20px;
-    left: calc(50% - 300px / 2);
-    width: 300px;
-    font-size: 30px;
-  }
-}
+
 @media (min-width:1600px) {
   .iphone{
     max-height: 600px;
@@ -79,5 +69,16 @@ a{
     width: 700px;
     top: 20px;
     left: calc(50% - 700px / 2);
+  }
+}
+@media (min-width:300px) {
+  .iphone{
+    height: 500px;
+  }
+  .info{
+    top: 20px;
+    left: calc(50% - 300px / 2);
+    width: 300px;
+    font-size: 30px;
   }
 }
