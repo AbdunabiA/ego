@@ -40,6 +40,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  font-size: 20px;
 }
 a{
   color:rgb(178, 177, 177);
@@ -51,8 +52,20 @@ a{
   }
   .info{
     top: 20px;
-    left: 20px;
-    
+    left: calc(50% - 300px / 2);
+    width: 300px;
+  }
+}
+@media (min-width:1600px) {
+  .iphone{
+    max-height: 600px;
+    max-width: 1200px;
+    left: calc(50% - 1200px/2);
+  }
+  .info{
+    width: 500px;
+    top: 20px;
+    left: calc(50% - 500px / 2);
   }
 }
 @media (min-width:1200px){
@@ -61,12 +74,9 @@ a{
     width: 900px;
     left: calc(50% - 900px/2);
   }
-  
-}
-@media (min-width:1600px) {
-  .iphone{
-    max-height: 600px;
-    max-width: 1200px;
-    left: calc(50% - 1200px/2);
+  .info{
+    width: 500px;
+    top: 20px;
+    left: calc(50% - 500px / 2);
   }
 }
