@@ -15,7 +15,7 @@ function App() {
         <img src={iphone} alt="iphone" />
       </div>
       <div className="info">
-        <p>Sayt tez kunda ishka tushadi</p>
+        <p>Sayt tez kunda ishga tushadi</p>
         <p>
           Telegram: <a href="https://t.me/ego_uz">@ego_uz</a>
         </p>
